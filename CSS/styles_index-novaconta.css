@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Glory&display=swap');
+
+/*Geral*/
+html,body{
+    font-size: 1px;
+    background-color: rgb(248, 248, 248);
+}
+/*Geral*/
+
+
+/*Cabecalho*/
+.Cabecalho{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(/Site_Finnace/Imagens/Header_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Cabecalho--Login{
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%; 
+}
+
+.Cabecalho__Titulo{
+    font-size: 52rem;
+    font-family: 'Glegoo', serif;
+    text-align: center;
+    color: white;
+    margin: 5vh;
+}
+
+.Cabecalho__SubTitulo{
+    height: 12.5vh;
+    border-top-left-radius: 80rem;
+    border-top-right-radius: 80rem;
+    background-color: rgb(248, 248, 248);
+}
+
+.SubTitulo__Titulo{
+    font-family: 'Glory', sans-serif;
+    font-size: 32rem;
+    text-align: center;
+    margin: 5.5vh;
+}
+/*Cabecalho*/
+
+
+/*Conteudo Central*/
+.ConteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Glory', sans-serif;
+}
+
+.ConteudoPrincipal__Titulo{
+    font-size: 32rem;
+    margin-top: 7vh;
+    margin-bottom: 2.5vh;
+}
+
+.ConteudoPrincipal__Inputs{
+    width: 75vw;
+    max-width: 525px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Inputs__Campo{
+    height: 40rem;
+    margin-top: 3.5vh;
+    border: none;
+    border-radius: 40rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 17rem;
+    padding-left: 18rem;
+}
+
+.Inputs__Opcoes{
+    margin-top: 3.5vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Opcoes__Link-EsqSenha{
+    font-size: 20rem;
+    margin-left: 10rem;
+    color: blue;
+}
+
+.Opcoes__Btn-Submit{
+    height: 40rem;
+    width: 100rem;
+    border: none;
+    border-radius: 40rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 2.5rem;
+    background-image: url(/Site_Finnace/Imagens/Button_Background.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 18rem;
+    color: white;
+}
+
+.Btn-Submit--Cadastrar{
+    width: 150rem;
+}
+
+.ConteudoPrincipal__Btn-EntrarGoogle{
+    height: 45rem;
+    width: 75vw;
+    max-width: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 40rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    font-size: 16rem;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    margin-top: 5.5vh;
+    margin-bottom: 3vh;
+}
+
+.Btn-EntrarGoogle__Imagem{
+    margin-right: 10rem;
+}
+/*Conteudo Central*/
+
+/*Rodape*/
+.Rodape{
+    font-family: 'Glory', sans-serif;
+    margin-top: vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rodape__Titulo{
+    font-size: 17.5rem;
+    color: rgb(85, 85, 85);
+    word-spacing: 2rem;
+    margin: 1vh;
+}
+
+.Rodape__Btn{
+    font-size: 15rem;
+    width: 60vw;
+    max-width: 425px;
+    border: solid 1rem;
+    border-radius: 40rem;
+    background-color: white;
+}
+/*Rodape*/
+
+
+/*Animações*/
+.Inputs__Campo:hover,.Opcoes__Btn-Submit:hover,.ConteudoPrincipal__Btn-EntrarGoogle:hover{
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.10);
+}
+
+.Rodape__Btn:hover{
+    background-color: rgb(250, 245, 245);
+}
+
+.Opcoes__Link-EsqSenha:hover{
+    color: rgb(0, 102, 255);
+}
+
+.Opcoes__Link-EsqSenha:visited{
+    color: rgb(21, 12, 153);
+}
+/*Animações*/
+
+
+/*Media*/
+@media screen and (max-width: 479px){
+
+    .Cabecalho__Titulo{
+        font-size: 40rem;
+    }
+    
+    .ConteudoPrincipal__Titulo,.SubTitulo__Titulo{
+        font-size: 25rem;
+    }
+
+    .ConteudoPrincipal__Inputs{
+        width: 310rem;
+    }
+
+    .Inputs__Campo{
+        font-size: 15rem;
+        height: 35rem;
+    }
+
+    .Opcoes__Link-EsqSenha{
+        font-size: 17rem;
+    }
+
+    .Opcoes__Btn-Submit{
+        height: 35rem;
+        width: 90rem;
+        font-size: 16rem;
+    }
+
+    .Btn-Submit--Cadastrar{
+        width: 120rem;
+    }
+
+    .ConteudoPrincipal__Btn-EntrarGoogle{
+        height: 40rem;
+        width: 310rem;
+        font-size: 15rem;
+    }
+
+    .Rodape__Btn{
+        width: 225rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+
+    .Cabecalho__Titulo{
+        font-size: 30rem;
+    }
+    
+    .ConteudoPrincipal__Titulo,.SubTitulo__Titulo{
+        font-size: 20rem;
+    }
+
+    .ConteudoPrincipal__Inputs{
+        width: 250rem;
+    }
+
+    .Inputs__Campo{
+        font-size: 12rem;
+        height: 32rem;
+    }
+
+    .Opcoes__Link-EsqSenha{
+        font-size: 15rem;
+    }
+
+    .Opcoes__Btn-Submit{
+        height: 32rem;
+        width: 85rem;
+        font-size: 15rem;
+    }
+
+    .Btn-Submit--Cadastrar{
+        width: 105rem;
+    }
+
+    .ConteudoPrincipal__Btn-EntrarGoogle{
+        height: 35rem;
+        width: 250rem;
+        font-size: 13rem;
+    }
+
+    .Rodape__Titulo{
+        font-size: 14.5rem;
+    }
+
+    .Rodape__Btn{
+        width: 200px;
+        font-size: 12rem;
+    }
+}
+/*Media*/

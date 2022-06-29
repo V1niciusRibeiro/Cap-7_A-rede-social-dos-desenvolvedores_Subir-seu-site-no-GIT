@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Glory&display=swap');
+
+/*Geral*/
+body{
+    font-family: 'Glory', sans-serif;
+    background-image: url(/Site_Finnace/Imagens/Header_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+}
+/*Geral*/
+
+
+/*Cabeçalho*/
+.Cabecalho{
+    height: 10vh;   
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    background-color: white;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Sub-Cabecalho{
+    height: 7.5vh;
+}
+
+
+.MenuOptionsImg{
+    padding-top: calc(3*.5vh);
+    height: 2.5rem;
+}
+
+.Sub-Cabecalho__Titulo{
+    font-size: 2.5rem;
+    padding-top: calc(3*.5vh);
+    margin-left: 1rem;
+}
+
+.UsuarioImg{
+    padding-top: calc(3*.5vh);
+    height: 4.75rem;
+}
+
+.NavHistory{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(110, 110, 110);
+    margin-top: -.5rem;
+}
+/*Cabeçalho*/
+
+
+/*Main*/
+.ConteudoPrincipal__Titulo{
+    font-family: 'Glegoo', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+    margin: 1rem;
+}
+
+.BoxGrande{
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.BoxGrande__Titulo{
+    color: rgb(110, 110, 110);
+    margin: 0rem;
+    margin-top: .5rem;
+    font-size: 2.2rem;
+}
+
+.BoxGrande__ValorMeta{
+    font-family: 'Glegoo', serif;
+    font-weight: 600;
+    color: black;
+    font-size: 2.3rem;
+}
+
+.BoxGrande__Valores{
+    margin: 1rem;
+    margin-top: 2vh;
+}
+
+.Valores__Titulo{
+    margin: 0rem;
+    font-size: 1.5rem;
+    color: rgb(110, 110, 110);
+}
+
+.Valores__Valor{
+    font-family: 'Glegoo', serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.75rem;    
+}
+
+.BoxMenor{
+    border-radius: 3rem;
+    background-color: white;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.BoxMenor__Titulo{
+    font-size: 1.75rem;
+    color: black;
+    margin: 0rem;
+    margin-bottom: .5vh;
+    margin-top: 2vh;
+}
+
+.BoxMenor__Campo{
+    border: solid 1.5px;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Campo--Maior{
+    height: 10rem;
+}
+
+.Campo__Divisor{
+    height: 2rem;
+    border-bottom: solid 1.5px;
+}
+
+.Campo__Valor{
+    margin: 0rem;
+    margin-top: .25rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: 1.15rem;
+}
+
+.BoxMenor__MaisOpcoes{
+    border: solid 1.5px;
+    border-top: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;    
+    background-color: white;
+    margin-top: -.15vh;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+ 
+}
+
+.BoxMenor__Btn{
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    width: 20rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Btn--Sucesso{
+    background-image: url(/Site_Finnace/Imagens/Button_Background.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Btn--Cancela{
+    background-image: url(/Site_Finnace/Imagens/Button-Fail_Background.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Main*/
+
+
+/*Animações*/
+.BoxMenor__Campo:hover,.BoxMenor__MaisOpcoes:hover,.BoxMenor__Btn:hover{
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+/*Animações*/
+
+
+/*Media*/
+@media screen and (max-width: 500px){
+
+    .Sub-Cabecalho__Titulo{
+        font-size: 4vh;
+    }
+
+    .MenuOptionsImg{
+        height: 2.25rem;
+        margin-left: 1rem;
+    }
+
+    .UsuarioImg{
+        height: 4rem;
+        margin-left: 1rem;
+    }
+
+    .NavHistory{
+        font-size: 1rem;
+    }
+
+    .ConteudoPrincipal__Titulo{
+        font-size: 1.8rem;
+    }
+
+    .BoxGrande__Titulo{
+        font-size: 1.75rem;
+    }
+
+    .BoxGrande__ValorMeta{
+        font-size: 1.85rem;
+    }
+
+    .Valores__Titulo{
+        font-size: 1.25rem;
+    }
+
+    .Valores__Valor{
+        font-size: 1.5rem;
+    }
+
+    .BoxMenor__Titulo{
+        font-size: 1.5rem;
+    }
+
+    .Campo--Maior{
+        height: 7rem;
+    }
+
+    .Campo__Valor{
+        font-size: .9rem;
+    }
+
+    .BoxMenor__MaisOpcoes{
+        font-size: .85rem;
+    }
+
+    .BoxMenor__Btn{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+
+    .Sub-Cabecalho__Titulo{
+        font-size: 1rem;
+    }
+
+    .MenuOptionsImg{
+        height: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .UsuarioImg{
+        height: 3rem;
+        margin-left: 1rem;
+    }
+
+    .NavHistory{
+        font-size: .7rem;
+    }
+
+    .ConteudoPrincipal__Titulo{
+        font-size: 1.5rem;
+    }
+
+    .BoxGrande__Titulo{
+        font-size: 1.5rem;
+    }
+
+    .BoxGrande__ValorMeta{
+        font-size: 1.6rem;
+    }
+
+    .Valores__Titulo{
+        font-size: 1.1rem;
+    }
+
+    .Valores__Valor{
+        font-size: 1.2rem;
+    }
+
+    .BoxMenor__Titulo{
+        font-size: 1.2rem;
+    }
+
+    .Campo--Maior{
+        height: 6rem;
+    }
+
+    .Campo__Valor{
+        font-size: .7rem;
+    }
+
+    .BoxMenor__MaisOpcoes{
+        font-size: .65rem;
+    }
+
+    .BoxMenor__Btn{
+        font-size: 1rem;
+        margin: .75rem;
+    }
+}
+/*Media*/
